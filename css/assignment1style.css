@@ -1,0 +1,299 @@
+.nomargin {
+    margin: 0;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+
+.headerfooter {
+    background-color: #282828;
+    color: grey;
+}
+
+hr {
+    background-color: goldenrod;
+    height: 5px;
+}
+
+/*Homepage section*/
+#ind {
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 4px 4px 0px navy, 4px 4px 8px white;
+    text-align: center;
+    padding-top: 17%;
+}
+
+#intro {
+    text-align: center;
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20%;
+    margin: 0px;
+}
+
+#bg1 {
+    background-image: url('../images/Homepage/background1.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bg2 {
+    background-image: url(../images/Homepage/background2.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.technologies {
+    text-align: center;
+    margin: 0px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.descriptionheader {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-shadow: 4px 4px 0px navy;
+    text-align: center;
+    opacity: 0;
+}
+
+.description {
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0px;
+    color: white;
+    opacity: 0;
+}
+
+
+/*Companies and organisations page section*/
+.companiespage {
+    text-align: center;
+    height: 700px;
+    background-repeat: no-repeat;
+}
+
+#bg3 {
+    background-image: url('../images/Companies/office.jpg');
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.companyheader {
+    padding-top: 20%;
+    color: white;
+    text-shadow: 4px 4px 0px navy;
+    opacity: 0;
+    text-align: center;
+}
+
+.companylink {
+    opacity: 0;
+}
+
+#feedbackheader {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color: navy;
+    text-shadow: 4px 4px 0px white;
+}
+
+#feedbacksubheader {
+    text-align: center;
+}
+
+.managerbuttons {
+    float: right;
+    border-color: #ccc;
+}
+
+/*Emerging technologies page section*/
+#bg4 {
+    background-image: url('../images/Homepage/background2.jpg');
+    min-height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.emergingtechheader {
+    padding-top: 30%;
+    color: white;
+    text-shadow: 4px 4px 0px navy;
+    text-align: center;
+}
+
+.emergingtechpage {
+    text-align: center;
+    height: 400px;
+    background-repeat: no-repeat;
+}
+
+.accordionheader {
+    text-align: center;
+    color: grey;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+/*Contact page section*/
+#bg5 {
+    background-image: url('../images/Homepage/background1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:500px
+}
+
+
+/*Responsive text size section*/
+@media (min-width: 1200px) {
+    #ind {
+        font-size: 50px;
+    }
+
+    #intro {
+        font-size: 20px;
+    }
+
+    .descriptionheader {
+        font-size: 35px;
+    }
+
+    .companyheader {
+        font-size: 35px;
+    }
+
+    .emergingtechheader {
+        font-size: 35px;
+    }
+
+    #feedbackheader {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    #ind {
+        font-size: 50px;
+    }
+
+    #intro {
+        font-size: 20px;
+    }
+
+    .descriptionheader {
+        font-size: 35px;
+    }
+
+    .companyheader {
+        font-size: 35px;
+    }
+
+    .emergingtechheader {
+        font-size: 35px;
+    }
+
+    #feedbackheader {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #ind {
+        font-size: 50px;
+    }
+
+    #intro {
+        font-size: 15px;
+    }
+
+    .descriptionheader {
+        font-size: 35px;
+    }
+
+    .companyheader {
+        font-size: 35px;
+    }
+
+    .emergingtechheader {
+        font-size: 35px;
+    }
+
+    #feedbackheader {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    #ind {
+        font-size: 45px;
+    }
+
+    #intro {
+        font-size: 15px;
+    }
+
+    .descriptionheader {
+        font-size: 35px;
+    }
+
+    .companyheader {
+        font-size: 35px;
+    }
+
+    .emergingtechheader {
+        font-size: 35px;
+    }
+
+    #feedbackheader {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    #ind {
+        font-size: 40px;
+    }
+
+    #intro {
+        font-size: 15px;
+    }
+
+    .descriptionheader {
+        font-size: 35px;
+    }
+
+    .companyheader {
+        font-size: 35px;
+    }
+
+    .emergingtechheader {
+        font-size: 35px;
+    }
+
+    #feedbackheader {
+        font-size: 20px;
+    }
+}
