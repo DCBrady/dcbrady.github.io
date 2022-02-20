@@ -1,2 +1,46 @@
-<link rel="stylesheet" href="gamer.css">
-<h1 class="rainbow-text">im hater myself!!!!!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brython Examples</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython_stdlib.js" integrity="sha256-Gnrw9tIjrsXcZSCh/wos5Jrpn0bNVNFJuNJI9d71TDs=" crossorigin="anonymous"></script>
+</head>
+<body onload="brython()">
+    <input type="text" id="text" placeholder="Enter anything in mind">
+    <span id="output"></span>
+        <script type="text/python" id="script1">
+            from browser import document
+            import webbrowser
+            import tkinter as tk
+
+            root = tk.Tk()
+
+            def main():
+                pokemon = entry.get()
+                url = "https://bulbapedia.bulbagarden.net/wiki/"
+                url2= "_(Pok%C3%A9mon)#Type_effectiveness"
+                url += pokemon
+                url += url2
+                print(url)
+                webbrowser.open(url)
+
+            inputLabel = tk.Label(text="Enter a pokemon name: ")
+            entry = tk.Entry()
+            searchButton = tk.Button(text="Search", command=main)
+
+            inputLabel.grid(row=0, column=0)
+            entry.grid(row=1, column=0)
+            searchButton.grid(row=2, column=0)
+
+            root.mainloop()
+            def show_text(e):
+                document['output'].textContent = e.target.value;
+
+            document['text'].bind('input', show_text)
+        </script>
+</body>
+</html> 
